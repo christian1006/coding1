@@ -1,0 +1,35 @@
+.menu {
+    padding: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    margin: 3px 0;
+}
+
+.menu.open .bar-1 {
+    transform: rotate(40deg);
+}
+
+.menu.open .bar-2 {
+    opacity: 0;
+}
+
+.menu.open .bar-3 {
+    transform: rotate(-40deg);
+    margin-top: -12px;
+}
+
+nav {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s;
+}
+
+nav.navbar {
+    height: 100px;
+}
